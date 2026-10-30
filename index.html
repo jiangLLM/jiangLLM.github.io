@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffcf4">
+  <meta name="description" content="Jiang Wu's research on personalized agents, personalized large language models, and personalized recommendation. Developing a benchmark for personalized agents and welcoming research collaborations.">
+  <title>Jiang Wu — Research</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23263e8c'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='29' fill='white'%3Ejw%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&amp;family=Sofia&amp;display=swap">
+  <link rel="stylesheet" href="styles.css?v=other-bullets-20261028">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="6f28a3b5-c6e0-413b-9504-a6d3bce6584e"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+<main id="main">
+      <section class="intro" id="about" aria-labelledby="name">
+        <figure class="portrait">
+          <img src="avatar.png" alt="Cartoon avatar of a smiling character in a white hood and black glasses" width="1254" height="1254">
+        </figure>
+        <div class="intro-copy">
+          <h1 id="name">Hi, I’m Jiang Wu</h1>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="mailto:jiangwu@jiangwu.io">Email</a><span aria-hidden="true">/</span>
+            <a href="https://scholar.google.com/citations?user=lbVaup8AAAAJ&amp;hl=en">Google Scholar</a><span aria-hidden="true">/</span>
+            <a href="https://github.com/jiangLLM">GitHub</a>
+          </div>
+          <p class="bio">My research focuses primarily on <strong>personalized agents</strong>, <strong>personalized large language models</strong>, and <strong>personalized recommendation</strong>. I am currently developing a <strong>benchmark for personalized agents</strong>. If you are interested in collaborating on this effort, please feel free to <a href="mailto:jiangwu@jiangwu.io">get in touch</a>.</p>
+          <p class="bio">For personalized LLMs, I work on <strong>post-training</strong>, <strong>lightweight adaptation</strong>, and <strong>preference-guided decoding</strong> to help models learn and respond to user preferences. I study how adaptation can capture shared preferences within user groups, and how decoding-time guidance can align generated responses with individual preferences. Because learned preferences can conflict with explicit task and style instructions, I also investigate how to balance these requirements and control the strength of personalization at inference time.</p>
+          <p class="bio">In <strong>personalized recommendation</strong>, I develop language-model-based approaches to <strong>ranking and next-item prediction</strong>. These approaches combine item content with users’ interaction histories and feedback to identify items that match individual preferences.</p>
+          <p class="bio">For <strong>personalized agents</strong>, I explore how <strong>memory</strong> can retain useful context and experience across interactions to support personalized decisions. This involves deciding what to remember, organizing experience into reusable knowledge, and determining when stored information is relevant to a new task.</p>
+          <p class="bio">I graduated from the <a href="https://www.cs.usc.edu/">University of Southern California</a> in 2020.</p>
+        </div>
+      </section>
+
+      <section class="publications" id="publications" aria-labelledby="publications-heading">
+        <div class="section-heading">
+          <h2 id="publications-heading">Recent Selected Publications</h2>
+          <span class="year">2026</span>
+        </div>
+        <div class="paper-list">
+          <article class="paper">
+            <a class="paper-figure" href="figures/psplug-method.png" target="_blank" rel="noopener" aria-label="View full PsPLUG method figure">
+              <img src="figures/psplug-method.png" alt="PsPLUG injects a controllable user-specific prefix into a frozen language model." width="1882" height="910" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <h3><a href="https://aclanthology.org/2026.emnlp-main.43/">Do Implicit Personalization and Explicit Styles Conflict? PsPLUG: A Lightweight Plug-in for Balancing Personalization and Style in Customized LLMs</a></h3>
+              <p class="authors"><strong>Jiang Wu</strong>, Yutong Song, Shaofan Yuan, Chengze Shen, Jian Wang, Yu Wang, Nikil Dutt, Amir M. Rahmani</p>
+              <p class="paper-meta">
+                <span class="venue-label"><strong class="venue">EMNLP 2026</strong><span class="presentation-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>Oral</span></span>
+                <a class="paper-link" href="https://aclanthology.org/2026.emnlp-main.43/">[Paper]<span class="sr-only">: PsPLUG</span></a>
+              </p>
+            </div>
+          </article>
+
+          <article class="paper">
+            <a class="paper-figure" href="figures/card-method.png" target="_blank" rel="noopener" aria-label="View full CARD method figure">
+              <img src="figures/card-method.png" alt="CARD combines user clustering, group adaptation, preference learning, and personalized decoding." width="1387" height="504" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <h3><a href="https://aclanthology.org/2026.findings-emnlp.44/">CARD: Cluster-level Adaptation with Reward-guided Decoding for Personalized Text Generation</a></h3>
+              <p class="authors"><strong>Jiang Wu</strong>, Yutong Song, Weijia Zhang, Chengze Shen, Shaofan Yuan, Weitao Lu, Jian Wang, Yu Wang, Nikil Dutt, Amir M. Rahmani</p>
+              <p class="paper-meta"><strong class="venue">EMNLP 2026</strong><a class="paper-link" href="https://aclanthology.org/2026.findings-emnlp.44/">[Paper]<span class="sr-only">: CARD</span></a></p>
+            </div>
+          </article>
+
+          <article class="paper">
+            <a class="paper-figure" href="figures/demma-method.png" target="_blank" rel="noopener" aria-label="View full DemMA method figure">
+              <img src="figures/demma-method.png" alt="DemMA forms patient personas, generates dialogues, and distills reasoning and actions into one model." width="1874" height="1132" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <h3><a href="https://aclanthology.org/2026.findings-acl.605/">DemMA: Dementia Multi-Turn Dialogue Agent with Expert-Guided Reasoning and Action Simulation</a></h3>
+              <p class="authors"><strong>Jiang Wu</strong>, Yutong Song, Kazi Shaharair Sharif, Pengfei Zhang, Wenjun Huang, Honghui Xu, Nikil Dutt, Amir M. Rahmani</p>
+              <p class="paper-meta"><strong class="venue">ACL 2026</strong><a class="paper-link" href="https://aclanthology.org/2026.findings-acl.605/">[Paper]<span class="sr-only">: DemMA</span></a></p>
+            </div>
+          </article>
+
+          <article class="paper">
+            <a class="paper-figure" href="figures/ap-grpo-method.png" target="_blank" rel="noopener" aria-label="View full AP-GRPO method figure">
+              <img src="figures/ap-grpo-method.png" alt="AP-GRPO aligns reconstructed speech with audible anchors and inter-anchor phonetic evidence." width="1600" height="900" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <h3><a href="https://aclanthology.org/2026.emnlp-main.1287/">AP-GRPO: Anchor-Gated Phonetic Alignment with Policy Optimization for Pathological Speech Reconstruction</a></h3>
+              <p class="authors">Pengfei Zhang, Hoang H Nguyen, Yutong Song, Wenjun Huang, Tahmid Imtiaz Imu, Henry Peng Zou, <strong>Jiang Wu</strong>, Honghui Xu, Amir M. Rahmani</p>
+              <p class="paper-meta">
+                <span class="venue-label"><strong class="venue">EMNLP 2026</strong><span class="presentation-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/></svg>Oral</span></span>
+                <a class="paper-link" href="https://aclanthology.org/2026.emnlp-main.1287/">[Paper]<span class="sr-only">: AP-GRPO</span></a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="other" aria-labelledby="other-heading">
+        <h2 id="other-heading">Other</h2>
+        <ul class="other-interests">
+          <li>One of my favorite poems is <a href="https://www.diggers.org/digpaps68/allwat68.html"><em>All Watched Over by Machines of Loving Grace</em></a> by Richard Brautigan. Another favorite is Xin Qiji’s <a href="https://zh.wikisource.org/zh-hant/%E9%9D%92%E7%8E%89%E6%A1%88%C2%B7%E5%85%83%E5%A4%95" lang="zh-Hant">青玉案·元夕（東風夜放花千樹）</a>.</li>
+          <li>I enjoy swimming and playing tennis in different places around the world.
+            <ul class="unlocked-regions">
+              <li>Places unlocked: Singapore (<abbr title="Nanyang Technological University">NTU</abbr>, <abbr title="National University of Singapore">NUS</abbr>), LA, Bay Area, Irvine, Honolulu, Seattle, NYC, Chengdu.</li>
+            </ul>
+          </li>
+          <li>I’m currently reading <a href="https://www.penguinrandomhouse.com/books/109395/the-razors-edge-by-w-somerset-maugham/"><em>The Razor's Edge</em></a> by W. Somerset Maugham.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>© 2026 Jiang Wu</span></footer>
+  </div>
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "9451ece5f7894570979669d42f3fefdb"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
